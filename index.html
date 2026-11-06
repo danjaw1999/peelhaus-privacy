@@ -3,264 +3,553 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Peelhaus Privacy Policy</title>
-<meta name="description" content="Privacy policy for the Peelhaus app (iOS and Android) in Polish, English, German and Spanish.">
+<title>Peelhaus · Privacy notice</title>
+<meta name="description" content="Peelhaus privacy notice, pinned to the stairwell board of Kazimierz No. 7. Polski, English, Deutsch, Español.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <style>
-  :root { --bg: #14161b; --surface: #1d2027; --line: #2c3038; --text: #f2efe6; --muted: #9a9c98; --accent: #f2b531; }
+  :root {
+    color-scheme: light;
+    --wall: #61796a; --wall-top: #8fa596; --skirting: #2f3b33;
+    --oak: #9a6a3c; --oak-dark: #5d3a1c; --oak-light: #c18d57;
+    --cork: #c59b6b; --cork-dot: rgba(96, 58, 24, .38); --cork-fleck: rgba(255, 236, 200, .3);
+    --paper: #fbf7ec; --paper-line: #d9e2ea; --ink: #22261f; --soft: #4b5246;
+    --mustard: #e3b443; --mustard-ink: #2c2410; --pin: #b33a2a; --link: #7c2c1c; --tab: #fffaf0;
+    --display: "Fraunces", Georgia, "Times New Roman", serif;
+    --body: "Work Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --hand: "Caveat", "Bradley Hand", "Segoe Print", cursive;
+  }
   * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; }
-  nav { position: sticky; top: 0; z-index: 1; background: rgba(20, 22, 27, 0.95); border-bottom: 1px solid var(--line); }
-  nav div { max-width: 760px; margin: 0 auto; padding: 10px 16px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-  nav strong { margin-right: auto; font-size: 15px; }
-  nav a { color: var(--text); text-decoration: none; font-size: 14px; font-weight: 600; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; }
-  nav a:hover, nav a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
-  main { max-width: 760px; margin: 0 auto; padding: 8px 16px 64px; }
-  section { padding-top: 24px; scroll-margin-top: 64px; }
-  section + section { border-top: 1px solid var(--line); margin-top: 40px; }
-  h1 { font-size: 28px; line-height: 1.25; margin: 16px 0 4px; }
-  h2 { font-size: 19px; margin: 28px 0 8px; color: var(--accent); }
-  p, li { color: var(--text); }
-  .meta { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
-  .box { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; }
-  ul { padding-left: 20px; }
-  a { color: var(--accent); overflow-wrap: anywhere; }
-  footer { color: var(--muted); font-size: 13px; text-align: center; padding: 0 16px 32px; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; color: var(--ink); font: 16px/1.6 var(--body);
+    background-color: var(--wall);
+    background-image:
+      repeating-linear-gradient(90deg, rgba(255,255,255,.035) 0 2px, transparent 2px 9px),
+      linear-gradient(180deg, var(--wall-top) 0, var(--wall-top) 230px, var(--skirting) 230px, var(--skirting) 236px, var(--wall) 236px);
+    overflow-x: hidden;
+  }
+  a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; overflow-wrap: anywhere; }
+  a:focus-visible { outline: 3px solid var(--mustard); outline-offset: 2px; border-radius: 2px; }
+
+  .plaque { max-width: 1080px; margin: 0 auto; padding: 22px 16px 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+  .plaque b { font: 700 15px/1.2 var(--display); letter-spacing: .14em; text-transform: uppercase; color: #f4efe2; background: #24362c; border: 2px solid #c9b27a; border-radius: 3px; padding: 6px 12px; }
+  .plaque span { font: 600 26px/1.1 var(--hand); color: #1e2a22; }
+
+  .frame { max-width: 1080px; margin: 0 auto 40px; padding: 0 10px; }
+  .oak {
+    padding: 12px; border-radius: 5px;
+    background: linear-gradient(90deg, var(--oak-dark), var(--oak) 8%, var(--oak-light) 30%, var(--oak) 55%, var(--oak-light) 80%, var(--oak-dark));
+    box-shadow: 0 14px 30px rgba(16, 24, 18, .45), inset 0 0 0 1px rgba(0,0,0,.25);
+  }
+  .cork {
+    padding: 18px 12px 28px; border-radius: 2px;
+    background-color: var(--cork);
+    background-image: radial-gradient(var(--cork-dot) 1px, transparent 1.6px), radial-gradient(var(--cork-fleck) 1px, transparent 1.6px);
+    background-size: 7px 7px, 11px 11px; background-position: 0 0, 4px 6px;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,.35);
+  }
+
+  /* the language slip: tear-off tabs along its bottom edge */
+  .slip { position: relative; background: var(--tab); max-width: 560px; margin: 4px auto 26px; padding: 14px 16px 0; box-shadow: 0 6px 12px rgba(40,25,10,.3); transform: rotate(-.6deg); }
+  .slip::before { content: ""; position: absolute; top: -8px; left: 50%; width: 76px; height: 20px; margin-left: -38px; background: rgba(240, 232, 200, .75); box-shadow: 0 1px 2px rgba(0,0,0,.15); transform: rotate(2deg); }
+  .slip p { margin: 0 0 10px; font: 700 26px/1.1 var(--hand); text-align: center; }
+  .slip p small { display: block; font: 500 13px/1.4 var(--body); color: var(--soft); margin-top: 4px; }
+  .slip ul { list-style: none; margin: 0 -16px; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 2px dashed #b9ad94; }
+  .slip li + li { border-left: 2px dashed #b9ad94; }
+  .slip a { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 64px; padding: 8px 4px 12px; text-decoration: none; color: var(--ink); background: var(--tab); }
+  .slip a b { font: 700 20px/1 var(--display); }
+  .slip a span { font-size: 12px; color: var(--soft); margin-top: 3px; }
+  .slip a:hover { background: #f4ecd6; }
+  /* the tab you "tore off" hangs lower and turns mustard */
+  body:has(#pl:target) .slip a[href="#pl"], body:has(#en:target) .slip a[href="#en"],
+  body:has(#de:target) .slip a[href="#de"], body:has(#es:target) .slip a[href="#es"],
+  html.auto-pl body:not(:has(.lang:target)) .slip a[href="#pl"], html.auto-en body:not(:has(.lang:target)) .slip a[href="#en"],
+  html.auto-de body:not(:has(.lang:target)) .slip a[href="#de"], html.auto-es body:not(:has(.lang:target)) .slip a[href="#es"] {
+    background: var(--mustard); color: var(--mustard-ink); transform: translateY(6px) rotate(2deg); box-shadow: 0 4px 6px rgba(40,25,10,.3);
+  }
+
+  /* one language at a time once a tab is chosen; without JS and without a #hash all four stay readable */
+  main:has(.lang:target) .lang:not(:target) { display: none; }
+  html.auto-pl main:not(:has(.lang:target)) .lang:not(#pl),
+  html.auto-en main:not(:has(.lang:target)) .lang:not(#en),
+  html.auto-de main:not(:has(.lang:target)) .lang:not(#de),
+  html.auto-es main:not(:has(.lang:target)) .lang:not(#es) { display: none; }
+  .lang { scroll-margin-top: 640px; } /* only one language shows once targeted: land on the top of the board, slip included */
+  html:not([class*="auto-"]) main:not(:has(.lang:target)) .lang + .lang { margin-top: 44px; padding-top: 30px; border-top: 3px dotted rgba(60,35,12,.35); }
+
+  .notices { columns: 1; column-gap: 26px; }
+  .note {
+    position: relative; break-inside: avoid; display: block;
+    background: var(--paper); margin: 0 4px 26px; padding: 22px 18px 16px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.08), 0 8px 14px rgba(50, 30, 10, .28);
+    transform: rotate(var(--tilt, 0deg));
+  }
+  .note::before { /* drawing pin */
+    content: ""; position: absolute; top: 7px; left: 50%; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #f08a78, var(--pin) 55%, #6e1d12);
+    box-shadow: 1px 3px 3px rgba(0,0,0,.35);
+  }
+  .note:nth-child(4n+1) { --tilt: -.7deg; }
+  .note:nth-child(4n+2) { --tilt: .6deg; }
+  .note:nth-child(4n+3) { --tilt: -.3deg; }
+  .note:nth-child(4n)   { --tilt: .9deg; }
+  .note h2 { font: 700 21px/1.2 var(--display); margin: 4px 0 8px; letter-spacing: -.005em; }
+  .note p { margin: 0 0 10px; }
+  .note ul { margin: 0 0 10px; padding-left: 20px; }
+  .note li { margin-bottom: 5px; }
+  .note li::marker { color: var(--pin); }
+  .note > :last-child { margin-bottom: 0; }
+
+  .note.head { padding: 26px 20px 18px; }
+  .note.head .kicker { font: 600 12px/1.3 var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--soft); margin: 0 0 6px; }
+  .note.head h1 { font: 700 34px/1.08 var(--display); margin: 0 0 8px; letter-spacing: -.01em; }
+  .note.head .meta { font-size: 14px; color: var(--soft); }
+  .hand { font: 700 25px/1.2 var(--hand); color: #1f3a5a; margin: 10px 0 12px; }
+
+  .note.ruled { background-image: repeating-linear-gradient(180deg, transparent 0 25px, var(--paper-line) 25px 26px); background-position: 0 6px; }
+  .note.ruled::before { display: none; }
+  .note.ruled::after { /* taped instead of pinned */
+    content: ""; position: absolute; top: -9px; left: 22px; width: 70px; height: 20px; background: rgba(238, 230, 196, .8); box-shadow: 0 1px 2px rgba(0,0,0,.15); transform: rotate(-4deg);
+  }
+  .note.premium { background: var(--mustard); color: var(--mustard-ink); }
+  .note.premium a { color: #4a1f10; }
+  .note.premium .sig { font: 700 26px/1 var(--hand); text-align: right; margin-top: 4px; }
+  .note.premium li::marker { color: var(--mustard-ink); }
+  .note.small { font-size: 15px; }
+
+  footer { text-align: center; color: #eef1ea; font-size: 13px; padding: 0 16px 34px; }
+
+  @media (min-width: 760px) {
+    .plaque { padding: 34px 24px 18px; }
+    .frame { padding: 0 24px; }
+    .oak { padding: 18px; }
+    .cork { padding: 30px 30px 18px; }
+    .notices { columns: 2; }
+    .note { padding: 24px 24px 18px; }
+    .note.head h1 { font-size: 42px; }
+    .slip { margin-bottom: 34px; }
+  }
+  @media (min-width: 1100px) {
+    .cork { padding: 34px 40px 22px; }
+  }
+  @media print {
+    body, .cork, .oak { background: #fff; box-shadow: none; }
+    .slip { display: none; }
+    .lang { display: block !important; }
+    .note { transform: none; box-shadow: none; border: 1px solid #999; }
+  }
 </style>
+<script>
+  // With no #hash, show the visitor's language. Everything stays readable when this never runs.
+  (function () {
+    if (location.hash) return;
+    var l = (navigator.language || 'en').slice(0, 2).toLowerCase();
+    document.documentElement.className = 'auto-' + (/^(pl|en|de|es)$/.test(l) ? l : 'en');
+  })();
+</script>
 </head>
 <body>
-<nav aria-label="Language">
-  <div>
-    <strong>Peelhaus</strong>
-    <a href="#pl" hreflang="pl" lang="pl">Polski</a>
-    <a href="#en" hreflang="en" lang="en">English</a>
-    <a href="#de" hreflang="de" lang="de">Deutsch</a>
-    <a href="#es" hreflang="es" lang="es">Español</a>
-  </div>
+
+<header class="plaque">
+  <b>Kazimierz No. 7</b>
+  <span>Peelhaus · notice board</span>
+</header>
+
+<div class="frame"><div class="oak"><div class="cork">
+
+<nav class="slip" aria-label="Language / Język / Sprache / Idioma">
+  <p>Tear off your language<small>Oderwij swój język · Reiß deine Sprache ab · Arranca tu idioma</small></p>
+  <ul>
+    <li><a href="#pl" hreflang="pl" lang="pl"><b>PL</b><span>Polski</span></a></li>
+    <li><a href="#en" hreflang="en" lang="en"><b>EN</b><span>English</span></a></li>
+    <li><a href="#de" hreflang="de" lang="de"><b>DE</b><span>Deutsch</span></a></li>
+    <li><a href="#es" hreflang="es" lang="es"><b>ES</b><span>Español</span></a></li>
+  </ul>
 </nav>
+
 <main>
 
-<section id="pl" lang="pl">
-  <h1>Polityka prywatności</h1>
-  <p class="meta">Peelhaus (iOS i Android) · obowiązuje od 4 listopada 2026</p>
-  <div class="box">
-    <p>W skrócie: gra działa bez konta i bez internetu. Twoje postępy, ustawienia i statystyki zostają na urządzeniu. Nie mamy własnego serwera. Dane potrzebne do reklam przetwarza Google (AdMob), a zakupy obsługują Apple i Google.</p>
+<!-- ============================== POLSKI ============================== -->
+<section class="lang" id="pl" lang="pl">
+  <div class="notices">
+    <article class="note head">
+      <p class="kicker">Kazimierz nr 7 · ogłoszenie dla lokatorów</p>
+      <h1>Prywatność w Peelhaus</h1>
+      <p class="meta">Peelhaus na iOS i Androida · obowiązuje od 6 listopada 2026</p>
+      <p class="hand">Twoja kamienica mieszka w Twoim telefonie, nie u nas.</p>
+      <p>Grę prowadzi JaworIT Daniel Jaworski, który jest administratorem danych. Napisz, jeśli masz pytanie: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
+    </article>
+
+    <article class="note ruled">
+      <h2>Co zostaje w mieszkaniu</h2>
+      <p>Wszystko, co gra pamięta, leży w jej własnej pamięci na telefonie. Nie mamy serwera, więc nic z tego do nas nie trafia. Lista jest krótka:</p>
+      <ul>
+        <li>postępy: zapalone okna, gwiazdki za każdy tryb, zebrane pamiątki, rozpoczęty pokój, zapas podpowiedzi i kamienica na ekranie,</li>
+        <li>seria remiksu dnia (obecna, najdłuższa i kiedy ostatnio ją przywróciłeś),</li>
+        <li>ustawienia: język, dźwięk, wibracje i to, czy chcesz wieczorną karteczkę,</li>
+        <li>notatki o przypomnieniach: ile razy pytaliśmy o karteczkę, czy odmówiłeś i kiedy ostatnio grałeś,</li>
+        <li>liczniki reklam: kiedy była ostatnia reklama pełnoekranowa, ile pokoi minęło od tamtej pory, ile razy uruchomiłeś grę (żeby w pierwszej sesji nie było reklamy pełnoekranowej) i ile razy dostałeś pomoc bez reklamy, bo żadna się nie wczytała,</li>
+        <li>informacja, czy masz Premium.</li>
+      </ul>
+      <p>Żeby to wszystko usunąć, odinstaluj Peelhaus (na Androidzie to samo daje wyczyszczenie danych aplikacji). Innej kopii nie ma, więc później nie da się tego odtworzyć.</p>
+    </article>
+
+    <article class="note">
+      <h2>O co nigdy nie prosimy</h2>
+      <ul>
+        <li>o konto, imię ani adres e-mail,</li>
+        <li>o zgodę na analitykę czy raporty awarii, bo takich narzędzi w grze nie ma,</li>
+        <li>o dostęp do aparatu, mikrofonu, zdjęć, lokalizacji ani kontaktów; na Androidzie uprawnienia do mikrofonu i plików są wręcz zablokowane w samej aplikacji,</li>
+        <li>o nic do udostępniania: gra nie ma takiej funkcji i nie wysyła żadnych obrazków.</li>
+      </ul>
+    </article>
+
+    <article class="note">
+      <h2>Reklamy na klatce (Google AdMob)</h2>
+      <p>Darmowa wersja utrzymuje się z reklam, które dostarcza Google przez Google Mobile Ads SDK. Są trzy rodzaje:</p>
+      <ul>
+        <li>baner na fasadzie kamienicy i na ekranie remiksu dnia, od czwartego ukończonego pokoju, nigdy podczas naklejania,</li>
+        <li>od czasu do czasu reklama pełnoekranowa między pokojami: nigdy w pierwszej sesji, najwyżej co 4 pokoje i nie częściej niż co 5 minut,</li>
+        <li>filmy z nagrodą, które włączasz sam, gdy chcesz podpowiedź, „Przyklej jedną za mnie” albo przywrócenie serii.</li>
+      </ul>
+      <p>Przy pobieraniu reklamy SDK może przekazać Google:</p>
+      <ul>
+        <li>identyfikatory urządzenia: identyfikator reklamowy (IDFA na iPhonie tylko wtedy, gdy pozwolisz na śledzenie; identyfikator reklamowy Androida) oraz identyfikator zestawu aplikacji,</li>
+        <li>adres IP i przybliżoną lokalizację ustaloną na jego podstawie,</li>
+        <li>dane o kontakcie z reklamą, np. wyświetlenia, dotknięcia, uruchomienia aplikacji,</li>
+        <li>dane diagnostyczne i o wydajności, np. czas wczytywania czy awarie samego SDK.</li>
+      </ul>
+      <p>Google wykorzystuje je do wyświetlania i mierzenia reklam, do statystyk oraz do wykrywania oszustw; przesyła je w formie zaszyfrowanej. Gra prosi wyłącznie o reklamy odpowiednie dla każdego wieku. Więcej przeczytasz w tekstach <a href="https://policies.google.com/technologies/partner-sites">Jak Google wykorzystuje informacje z witryn i aplikacji partnerów</a> oraz <a href="https://policies.google.com/privacy">Polityka prywatności Google</a>.</p>
+    </article>
+
+    <article class="note">
+      <h2>Najpierw pytamy</h2>
+      <p>Przy pierwszym uruchomieniu reklamy nie startują. Dopiero po czwartym ukończonym pokoju (albo wcześniej, jeśli sam włączysz film z nagrodą) gra sprawdza w Google User Messaging Platform (UMP), czy trzeba pokazać formularz zgody. W Europejskim Obszarze Gospodarczym, Wielkiej Brytanii i Szwajcarii trzeba: możesz zgodzić się na reklamy spersonalizowane, odmówić albo wybrać poszczególne cele. Bez zgody Google pokazuje tylko reklamy niespersonalizowane.</p>
+      <p>Zmiana zdania? Jeśli UMP tego wymaga, na tablicy ogłoszeń (czyli w ustawieniach gry) wisi kartka „Opcje prywatności reklam”, która ponownie otwiera formularz.</p>
+      <p>Na iPhonie po tym kroku system zapyta, czy Peelhaus może śledzić Twoją aktywność w aplikacjach innych firm (App Tracking Transparency). Jeśli odmówisz, Google nie dostanie IDFA, reklamy będą niespersonalizowane, a gra działa dokładnie tak samo. Zmienisz to w Ustawieniach → Prywatność i ochrona → Śledzenie. Na Androidzie identyfikator reklamowy zresetujesz lub usuniesz w ustawieniach systemu.</p>
+      <p>Podstawa prawna: Twoja zgoda (art. 6 ust. 1 lit. a RODO), a w przypadku reklam niespersonalizowanych i zapobiegania oszustwom prawnie uzasadniony interes (art. 6 ust. 1 lit. f RODO).</p>
+    </article>
+
+    <article class="note premium">
+      <h2>Premium, od dozorcy</h2>
+      <p>Jest jeden zakup w aplikacji, „Premium” (peelhaus_premium_lifetime), płatny raz, bez subskrypcji. Usuwa baner i reklamy pełnoekranowe, a podpowiedzi, „Przyklej jedną za mnie” i przywrócenie serii dostajesz od razu, bez filmu.</p>
+      <p>Płatność w całości obsługuje Apple (App Store) albo Google (Google Play) na swoich zasadach prywatności. Nie widzimy Twojej karty ani konta w sklepie. Aplikacja dowiaduje się tylko, czy Premium jest kupione, i zapisuje to jako znacznik na telefonie. „Przywróć zakup” po prostu pyta sklep jeszcze raz.</p>
+      <p class="sig">dozorca</p>
+    </article>
+
+    <article class="note">
+      <h2>Wieczorna karteczka</h2>
+      <p>Peelhaus może zostawić krótką karteczkę o 19:00 czasu lokalnego w dni, w które jeszcze nie grałeś, najwyżej jedną dziennie. Telefon sam planuje ją na najwyżej tydzień do przodu, więc po tygodniu bez gry karteczki same ustają. Nie ma tu usługi push ani tokenu powiadomień i nic nie jest nigdzie wysyłane.</p>
+      <p>Na iPhonie karteczka najpierw przychodzi po cichu, tylko do Centrum powiadomień, dopóki nie zgodzisz się na pełne powiadomienia. Na Androidzie 13 i nowszym system najpierw pyta o zgodę. Wyłączysz ją na tablicy ogłoszeń („Wieczorna karteczka o 19:00”) albo w ustawieniach telefonu.</p>
+    </article>
+
+    <article class="note small">
+      <h2>Dzieci</h2>
+      <p>Peelhaus to spokojna gra dla ogółu odbiorców, nieskierowana do dzieci poniżej 13 lat. Świadomie nie zbieramy ich danych. Jeśli uważasz, że dziecko przekazało nam dane, napisz do nas.</p>
+    </article>
+
+    <article class="note">
+      <h2>Twoje prawa</h2>
+      <p>RODO daje Ci prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przeniesienia oraz sprzeciwu. Zgodę możesz wycofać w każdej chwili, bez wpływu na to, co działo się wcześniej.</p>
+      <p>Nie trzymamy o Tobie niczego na serwerach, więc zwykle nie mamy czego wydać ani skasować. Dane z gry usuwasz sam, odinstalowując ją. W sprawie danych reklamowych skorzystaj z opcji prywatności reklam, zresetuj identyfikator reklamowy albo użyj narzędzi Google.</p>
+      <p>Możesz też złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych (PUODO, <a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
+    </article>
+
+    <article class="note small">
+      <h2>Gdy ogłoszenie się zmieni</h2>
+      <p>Nowa wersja zastąpi tę na tej stronie, z nową datą. O większych zmianach wspomnimy też w aplikacji lub w opisie aktualizacji.</p>
+      <p>Pytania o prywatność: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>, JaworIT Daniel Jaworski.</p>
+    </article>
   </div>
-
-  <h2>Kto odpowiada za aplikację</h2>
-  <p>Aplikację Peelhaus tworzy JaworIT Daniel Jaworski (administrator danych). Kontakt: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
-
-  <h2>Dane na Twoim urządzeniu</h2>
-  <p>Aplikacja zapisuje lokalnie, w pamięci telefonu: postępy (ukończone sceny i tryby, światła w oknach, gwiazdki), zebrane pamiątki, scenę dnia i kalendarz serii, ustawienia (język, dźwięk, wibracje), stan przypomnienia, liczniki reklam (żeby pilnować limitów), liczbę uruchomień (żeby nie polecać naszych innych gier podczas pierwszej sesji) oraz informację, czy kupiłeś Premium. Te dane nie są wysyłane do nas ani nikomu innemu. Usuniesz je, czyszcząc dane aplikacji lub ją odinstalowując.</p>
-  <p>Nie zakładasz konta, nie podajesz imienia ani adresu e-mail. Aplikacja nie używa narzędzi analitycznych ani do raportowania awarii.</p>
-
-  <h2>Reklamy (Google AdMob)</h2>
-  <p>Wersja darmowa pokazuje baner na ekranie kamienicy i na ekranie sceny dnia (od 4. sceny, nigdy podczas naklejania), rzadko reklamę pełnoekranową między scenami (nigdy w pierwszej sesji, najwyżej raz na 4 sceny i 5 minut) oraz reklamy z nagrodą, które uruchamiasz sam. Reklamy dostarcza Google przez Google Mobile Ads SDK. Gdy reklama jest pobierana, SDK może zbierać i przesyłać do Google:</p>
-  <ul>
-    <li>identyfikatory urządzenia, np. identyfikator reklamowy (IDFA na iOS, za Twoją zgodą; identyfikator reklamowy Androida) i identyfikator zestawu aplikacji,</li>
-    <li>adres IP i przybliżoną lokalizację wyliczoną z adresu IP,</li>
-    <li>informacje o interakcjach z reklamami (np. wyświetlenia, kliknięcia, uruchomienia aplikacji),</li>
-    <li>dane diagnostyczne i o wydajności (np. czas uruchomienia, awarie SDK).</li>
-  </ul>
-  <p>Google używa tych danych do wyświetlania i mierzenia reklam, analityki oraz zapobiegania oszustwom. Dane są szyfrowane w trakcie przesyłania. Szczegóły: <a href="https://policies.google.com/technologies/partner-sites">Jak Google wykorzystuje informacje z aplikacji partnerów</a> i <a href="https://policies.google.com/privacy">Polityka prywatności Google</a>.</p>
-
-  <h2>Zgoda na reklamy (RODO)</h2>
-  <p>W Europejskim Obszarze Gospodarczym, Wielkiej Brytanii i Szwajcarii przed pierwszą reklamą aplikacja pokazuje formularz zgody Google (UMP). Możesz zgodzić się na reklamy spersonalizowane, odmówić lub wybrać szczegółowe opcje. Bez zgody reklamy nie są personalizowane. Decyzję zmienisz w każdej chwili w Ustawieniach → „Prywatność reklam”. Podstawą przetwarzania jest Twoja zgoda (art. 6 ust. 1 lit. a RODO) lub, w zakresie reklam niespersonalizowanych i zapobiegania oszustwom, prawnie uzasadniony interes.</p>
-
-  <h2>Śledzenie na iOS (ATT)</h2>
-  <p>Na iPhonie i iPadzie system zapyta, czy aplikacja może śledzić Twoją aktywność. Tylko jeśli się zgodzisz, Google otrzyma identyfikator reklamowy IDFA. Gra działa tak samo bez tej zgody. Zmienisz to w Ustawieniach systemu → Prywatność i ochrona → Śledzenie. Na Androidzie identyfikator reklamowy zresetujesz lub usuniesz w ustawieniach systemu.</p>
-
-  <h2>Powiadomienia</h2>
-  <p>Jeśli się zgodzisz, gra wysyła najwyżej jedno lokalne powiadomienie dziennie, o 19:00, przypominające o scenie dnia (nie wysyłamy go, jeśli tego dnia już grałeś). O zgodę pytamy dopiero, gdy zapalisz 3 okna lub masz 3 dni serii. Planuje je telefon. Nie korzystamy z powiadomień push ani serwera, nie tworzymy tokenu powiadomień. Wyłączysz je w ustawieniach gry lub systemu.</p>
-
-  <h2>Linki do naszych innych gier</h2>
-  <p>W Ustawieniach oraz najwyżej raz dziennie na ekranie wyniku aplikacja pokazuje inne gry JaworIT, oznaczone „Od JaworIT”. To nie jest reklama firm trzecich: lista jest wbudowana w aplikację, nic nie jest w tym celu pobierane i nie zapisujemy, czy ją widzisz lub klikasz. Dotknięcie otwiera stronę gry w App Store lub Google Play, gdzie obowiązują zasady prywatności Apple lub Google. Gracze Premium nie widzą tej karty na ekranie wyniku.</p>
-
-  <h2>Udostępnianie</h2>
-  <p>Aplikacja nie ma funkcji udostępniania, nie wysyła obrazków i nie prosi o dostęp do zdjęć.</p>
-
-  <h2>Zakupy w aplikacji</h2>
-  <p>Jednorazowy zakup „Premium” obsługuje Apple (App Store) lub Google (Google Play). Nie widzimy Twoich danych płatniczych. Aplikacja otrzymuje tylko informację, czy zakup jest aktywny, i zapisuje ją na urządzeniu. Obowiązują zasady prywatności Apple lub Google.</p>
-
-  <h2>Dzieci</h2>
-  <p>Aplikacja nie jest skierowana do dzieci poniżej 13 lat i świadomie nie zbiera ich danych. Jeśli uważasz, że dziecko przekazało nam dane, napisz do nas.</p>
-
-  <h2>Twoje prawa</h2>
-  <p>Nie przechowujemy Twoich danych na serwerach, więc nie mamy czego udostępnić ani usunąć. Dane w aplikacji usuniesz sam. W sprawie danych reklamowych możesz wycofać zgodę w aplikacji, zresetować identyfikator reklamowy lub skorzystać z narzędzi Google. Masz też prawo złożyć skargę do organu ochrony danych, w Polsce do Prezesa UODO.</p>
-
-  <h2>Zmiany</h2>
-  <p>Jeśli zmienimy tę politykę, opublikujemy nową wersję na tej stronie i zaktualizujemy datę obowiązywania. O istotnych zmianach poinformujemy w aplikacji lub w opisie aktualizacji.</p>
-
-  <h2>Kontakt</h2>
-  <p>Pytania dotyczące prywatności: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
 </section>
 
-<section id="en" lang="en">
-  <h1>Privacy Policy</h1>
-  <p class="meta">Peelhaus (iOS and Android) · effective November 4, 2026</p>
-  <div class="box">
-    <p>In short: the game works without an account and without internet. Your progress, settings and statistics stay on your device. We run no server of our own. Data needed for ads is processed by Google (AdMob), and purchases are handled by Apple and Google.</p>
+<!-- ============================== ENGLISH ============================== -->
+<section class="lang" id="en" lang="en">
+  <div class="notices">
+    <article class="note head">
+      <p class="kicker">Kazimierz No. 7 · notice to residents</p>
+      <h1>Privacy in Peelhaus</h1>
+      <p class="meta">Peelhaus for iOS and Android · in force from 6 November 2026</p>
+      <p class="hand">Your house lives on your phone, not with us.</p>
+      <p>The game is run by JaworIT Daniel Jaworski, the data controller. Questions are welcome at <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
+    </article>
+
+    <article class="note ruled">
+      <h2>Kept in your flat</h2>
+      <p>Everything the game remembers is saved in its own storage on your phone. We have no server, so none of it ever reaches us. The list is short:</p>
+      <ul>
+        <li>progress: which windows are lit, the stars for each mode, the keepsakes you collected, the room you are halfway through, hints left and which building is on screen;</li>
+        <li>your daily remix streak (current, best, and when you last restored it);</li>
+        <li>settings: language, sound, vibration and whether the evening note is on;</li>
+        <li>reminder bookkeeping: how often we asked about the evening note, whether you said no, and the last day you played;</li>
+        <li>ad counters: when the last full-screen ad ran, how many rooms since then, how many times you have opened the game (so your first session never gets a full-screen ad) and how often you got a help without an ad because none would load;</li>
+        <li>whether Premium is unlocked.</li>
+      </ul>
+      <p>To wipe it all, uninstall Peelhaus (on Android, clearing the app's storage does the same). There is no other copy, so it cannot be brought back afterwards.</p>
+    </article>
+
+    <article class="note">
+      <h2>Things we never ask for</h2>
+      <ul>
+        <li>an account, your name or your email address;</li>
+        <li>permission for analytics or crash reports, because the game contains no such tools;</li>
+        <li>your camera, microphone, photos, location or contacts. On Android the microphone and file permissions are blocked in the app itself;</li>
+        <li>anything to share: there is no sharing feature and the game sends no pictures.</li>
+      </ul>
+    </article>
+
+    <article class="note">
+      <h2>Ads in the stairwell (Google AdMob)</h2>
+      <p>The free game is paid for by ads that Google serves through the Google Mobile Ads SDK. There are three kinds:</p>
+      <ul>
+        <li>a banner on the house front and the daily remix screen, from your fourth finished room, never while you are peeling and placing;</li>
+        <li>now and then a full-screen ad between rooms: never in your first session, at least 4 rooms and 5 minutes apart;</li>
+        <li>rewarded videos that you start yourself for a hint, “Place one for me” or a streak restore.</li>
+      </ul>
+      <p>When an ad is requested, the SDK may send Google:</p>
+      <ul>
+        <li>device identifiers: the advertising ID (IDFA on iPhone only if you allow tracking; the Android advertising ID) and the app set ID;</li>
+        <li>your IP address and the approximate location worked out from it;</li>
+        <li>how you interact with ads, for example views, taps and app launches;</li>
+        <li>diagnostics and performance data, for example load times or crashes of the SDK itself.</li>
+      </ul>
+      <p>Google uses this to deliver and measure ads, for statistics and to catch fraud, and it travels encrypted. The game only requests ads suitable for all ages. Further reading: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+    </article>
+
+    <article class="note">
+      <h2>We ask first</h2>
+      <p>Nothing ad-related starts when you first open the game. Only after your fourth finished room (or earlier, if you start a rewarded video yourself) does Peelhaus check with Google's User Messaging Platform (UMP) whether a consent form is required. In the European Economic Area, the UK and Switzerland it is: you can accept personalised ads, refuse them, or choose purpose by purpose. Without consent, Google shows only non-personalised ads.</p>
+      <p>Changed your mind? Whenever UMP requires it, the notice board (the game's settings) carries an “Ad privacy options” slip that opens the form again.</p>
+      <p>On iPhone, after that step iOS asks whether Peelhaus may track your activity across other companies' apps (App Tracking Transparency). If you decline, Google never receives the IDFA, ads are non-personalised, and the game plays exactly the same. You can change this in Settings → Privacy &amp; Security → Tracking. On Android you can reset or delete the advertising ID in the system settings.</p>
+      <p>Legal basis: your consent (Art. 6(1)(a) GDPR); for non-personalised ads and fraud prevention, legitimate interest (Art. 6(1)(f) GDPR).</p>
+    </article>
+
+    <article class="note premium">
+      <h2>Premium, from the caretaker</h2>
+      <p>There is one in-app purchase, “Premium” (peelhaus_premium_lifetime), paid once, no subscription. It removes the banner and the full-screen ads, and hints, “Place one for me” and streak restores come straight away without a video.</p>
+      <p>Apple (App Store) or Google (Google Play) handle the whole payment under their own privacy terms. We never see your card or your store account. The app only learns whether Premium is owned and keeps that as a flag on your phone. “Restore purchase” simply asks the store again.</p>
+      <p class="sig">the caretaker</p>
+    </article>
+
+    <article class="note">
+      <h2>The evening note</h2>
+      <p>Peelhaus can leave a short note at 19:00 local time on days you have not played yet, never more than one a day. Your phone schedules it at most a week ahead, so after a week without play the notes stop on their own. There is no push service and no notification token, and nothing is sent anywhere.</p>
+      <p>On iPhone the note starts out quiet, landing only in Notification Center, until you agree to full notifications. On Android 13 and newer the system asks you first. Turn it off on the notice board (“An evening note at 19:00”) or in your phone's settings.</p>
+    </article>
+
+    <article class="note small">
+      <h2>Children</h2>
+      <p>Peelhaus is a calm game for a general audience and is not directed at children under 13. We do not knowingly collect their data. If you believe a child has given us personal data, please write to us.</p>
+    </article>
+
+    <article class="note">
+      <h2>Your rights</h2>
+      <p>The GDPR gives you the right to access your data and to have it corrected or erased, to restrict or object to its processing, and to data portability. You can withdraw consent at any time; this does not affect anything that happened before.</p>
+      <p>We keep nothing about you on any server, so there is usually nothing for us to hand over or delete. You remove the game's data yourself by uninstalling it. For advertising data, use the ad privacy options, reset your advertising ID or use Google's own tools.</p>
+      <p>You may also complain to the Polish supervisory authority, the President of the Personal Data Protection Office (PUODO, <a href="https://uodo.gov.pl">uodo.gov.pl</a>), or to the authority where you live.</p>
+    </article>
+
+    <article class="note small">
+      <h2>When this notice changes</h2>
+      <p>A new version will replace this one on this page with a new date. Bigger changes will also be mentioned in the app or in the update notes.</p>
+      <p>Privacy questions: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>, JaworIT Daniel Jaworski.</p>
+    </article>
   </div>
-
-  <h2>Who is responsible</h2>
-  <p>Peelhaus is made by JaworIT Daniel Jaworski (data controller). Contact: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
-
-  <h2>Data on your device</h2>
-  <p>The app stores the following locally on your device: progress (finished scenes and modes, window lights, stars), the keepsakes you collected, the daily scene and streak calendar, settings (language, sound, haptics), the reminder state, ad counters (to enforce the limits), a launch counter (so we never suggest our other games during your first session) and whether you bought Premium. This data is not sent to us or anyone else. You can delete it by clearing the app's data or uninstalling it.</p>
-  <p>You do not create an account or give us your name or email address. The app uses no analytics or crash-reporting tools.</p>
-
-  <h2>Ads (Google AdMob)</h2>
-  <p>The free version shows a banner on the townhouse screen and the daily scene screen (from your 4th scene, never while you are placing stickers), a rare full-screen ad between scenes (never in your first session, at most once every 4 scenes and 5 minutes), and rewarded ads that you start yourself. Ads are provided by Google through the Google Mobile Ads SDK. When an ad is loaded, the SDK may collect and send to Google:</p>
-  <ul>
-    <li>device identifiers, such as the advertising identifier (IDFA on iOS, only with your permission; Android advertising ID) and the app set ID,</li>
-    <li>IP address and approximate location derived from the IP address,</li>
-    <li>information about interactions with ads (for example views, taps, app launches),</li>
-    <li>diagnostic and performance data (for example launch time, SDK crashes).</li>
-  </ul>
-  <p>Google uses this data to show and measure ads, for analytics and to prevent fraud. The data is encrypted in transit. Details: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-
-  <h2>Ad consent (GDPR)</h2>
-  <p>In the European Economic Area, the UK and Switzerland, the app shows Google's consent form (UMP) before the first ad. You can accept personalized ads, decline, or choose detailed options. Without consent, ads are not personalized. You can change your choice at any time in Settings → "Ad privacy". The legal basis is your consent (Art. 6(1)(a) GDPR) or, for non-personalized ads and fraud prevention, legitimate interest.</p>
-
-  <h2>Tracking on iOS (ATT)</h2>
-  <p>On iPhone and iPad, the system asks whether the app may track your activity. Google receives the IDFA advertising identifier only if you allow it. The game works the same without this permission. You can change it in iOS Settings → Privacy &amp; Security → Tracking. On Android, you can reset or delete the advertising ID in the system settings.</p>
-
-  <h2>Notifications</h2>
-  <p>If you allow it, the game sends at most one local notification a day, at 19:00, about the daily scene (skipped if you already played that day). We only ask once you have lit 3 windows or have a 3-day streak. Your phone schedules it. We use no push service or server and create no notification token. Turn it off in the game or in system settings.</p>
-
-  <h2>Links to our other games</h2>
-  <p>In Settings and, at most once a day, on a result screen, the app shows other games by JaworIT, marked "From JaworIT". This is not a third-party ad: the list is built into the app, nothing is downloaded for it, and we do not record whether you see or tap it. Tapping opens the game's page in the App Store or Google Play, where Apple's or Google's privacy policy applies. Premium players do not see the card on result screens.</p>
-
-  <h2>Sharing</h2>
-  <p>The app has no sharing feature, sends no images and does not ask for access to your photos.</p>
-
-  <h2>In-app purchases</h2>
-  <p>The one-time "Premium" purchase is processed by Apple (App Store) or Google (Google Play). We never see your payment details. The app only receives whether the purchase is active and stores that on your device. Apple's or Google's privacy policy applies to the payment.</p>
-
-  <h2>Children</h2>
-  <p>The app is not directed at children under 13 and does not knowingly collect their data. If you believe a child has provided us with data, please contact us.</p>
-
-  <h2>Your rights</h2>
-  <p>We do not store your data on any server, so there is nothing for us to export or delete. You can delete the data in the app yourself. For advertising data, you can withdraw consent in the app, reset your advertising ID or use Google's tools. You also have the right to lodge a complaint with a data protection authority.</p>
-
-  <h2>Changes</h2>
-  <p>If we change this policy, we will publish the new version on this page and update the effective date. We will point out significant changes in the app or in the update notes.</p>
-
-  <h2>Contact</h2>
-  <p>Privacy questions: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
 </section>
 
-<section id="de" lang="de">
-  <h1>Datenschutzerklärung</h1>
-  <p class="meta">Peelhaus (iOS und Android) · gültig ab 4. November 2026</p>
-  <div class="box">
-    <p>Kurz gesagt: Das Spiel funktioniert ohne Konto und ohne Internet. Dein Fortschritt, deine Einstellungen und Statistiken bleiben auf deinem Gerät. Wir betreiben keinen eigenen Server. Daten für Werbung verarbeitet Google (AdMob), Käufe wickeln Apple und Google ab.</p>
+<!-- ============================== DEUTSCH ============================== -->
+<section class="lang" id="de" lang="de">
+  <div class="notices">
+    <article class="note head">
+      <p class="kicker">Kazimierz Nr. 7 · Aushang für die Hausbewohner</p>
+      <h1>Datenschutz in Peelhaus</h1>
+      <p class="meta">Peelhaus für iOS und Android · gültig ab 6. November 2026</p>
+      <p class="hand">Dein Haus wohnt auf deinem Handy, nicht bei uns.</p>
+      <p>Verantwortlich für das Spiel ist JaworIT Daniel Jaworski. Bei Fragen schreib an <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
+    </article>
+
+    <article class="note ruled">
+      <h2>Bleibt in deiner Wohnung</h2>
+      <p>Alles, was sich das Spiel merkt, liegt in seinem eigenen Speicher auf deinem Handy. Wir haben keinen Server, also kommt davon nichts bei uns an. Die Liste ist kurz:</p>
+      <ul>
+        <li>Fortschritt: welche Fenster leuchten, die Sterne je Modus, gesammelte Andenken, das angefangene Zimmer, verbleibende Tipps und welches Haus gerade zu sehen ist;</li>
+        <li>deine Serie beim Tages-Remix (aktuell, Bestwert und wann du sie zuletzt wiederhergestellt hast);</li>
+        <li>Einstellungen: Sprache, Ton, Vibration und ob der Zettel am Abend an ist;</li>
+        <li>Notizen zur Erinnerung: wie oft wir nach dem Zettel gefragt haben, ob du abgelehnt hast und wann du zuletzt gespielt hast;</li>
+        <li>Werbezähler: wann die letzte Vollbildwerbung lief, wie viele Zimmer seitdem, wie oft du das Spiel geöffnet hast (damit deine erste Sitzung ohne Vollbildwerbung bleibt) und wie oft du Hilfe ohne Werbung bekommen hast, weil keine laden wollte;</li>
+        <li>ob Premium freigeschaltet ist.</li>
+      </ul>
+      <p>Um alles zu löschen, deinstallierst du Peelhaus (unter Android geht es auch über „Speicher leeren“ in den App-Einstellungen). Eine andere Kopie gibt es nicht, danach lässt sich also nichts wiederherstellen.</p>
+    </article>
+
+    <article class="note">
+      <h2>Wonach wir nie fragen</h2>
+      <ul>
+        <li>nach einem Konto, deinem Namen oder deiner E-Mail-Adresse;</li>
+        <li>nach einer Erlaubnis für Analyse oder Absturzberichte, denn solche Tools sind im Spiel nicht enthalten;</li>
+        <li>nach Kamera, Mikrofon, Fotos, Standort oder Kontakten. Unter Android sind die Berechtigungen für Mikrofon und Dateien in der App sogar gesperrt;</li>
+        <li>nach etwas zum Teilen: Es gibt keine Teilen-Funktion, und das Spiel verschickt keine Bilder.</li>
+      </ul>
+    </article>
+
+    <article class="note">
+      <h2>Werbung im Treppenhaus (Google AdMob)</h2>
+      <p>Die kostenlose Version finanziert sich über Werbung, die Google mit dem Google Mobile Ads SDK ausliefert. Es gibt drei Arten:</p>
+      <ul>
+        <li>ein Banner an der Hausfassade und beim Tages-Remix, ab dem vierten fertigen Zimmer, nie während du klebst;</li>
+        <li>ab und zu eine Vollbildwerbung zwischen den Zimmern: nie in der ersten Sitzung, frühestens nach 4 Zimmern und 5 Minuten;</li>
+        <li>Videos mit Belohnung, die du selbst startest, für einen Tipp, „Einen für mich kleben“ oder um deine Serie zu retten.</li>
+      </ul>
+      <p>Wird eine Anzeige angefragt, kann das SDK an Google senden:</p>
+      <ul>
+        <li>Gerätekennungen: die Werbe-ID (IDFA auf dem iPhone nur, wenn du Tracking erlaubst; die Android-Werbe-ID) und die App-Set-ID;</li>
+        <li>deine IP-Adresse und den daraus ermittelten ungefähren Standort;</li>
+        <li>Angaben zur Nutzung von Anzeigen, etwa Aufrufe, Antippen und App-Starts;</li>
+        <li>Diagnose- und Leistungsdaten, etwa Ladezeiten oder Abstürze des SDK selbst.</li>
+      </ul>
+      <p>Google nutzt diese Daten, um Anzeigen auszuliefern und zu messen, für Statistiken und gegen Betrug; übertragen wird verschlüsselt. Das Spiel fragt nur Anzeigen an, die für alle Altersgruppen geeignet sind. Mehr dazu: <a href="https://policies.google.com/technologies/partner-sites">Wie Google Daten von Websites oder Apps verwendet, die Google-Dienste nutzen</a> und die <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>.</p>
+    </article>
+
+    <article class="note">
+      <h2>Erst wird gefragt</h2>
+      <p>Beim ersten Öffnen startet noch keine Werbung. Erst nach dem vierten fertigen Zimmer (oder früher, wenn du selbst ein Video mit Belohnung startest) prüft Peelhaus über Googles User Messaging Platform (UMP), ob ein Einwilligungsformular nötig ist. Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz ist das der Fall: Du kannst personalisierte Werbung erlauben, ablehnen oder einzelne Zwecke auswählen. Ohne Einwilligung zeigt Google nur nicht personalisierte Werbung.</p>
+      <p>Meinung geändert? Sobald UMP es verlangt, hängt am Schwarzen Brett (den Einstellungen des Spiels) ein Zettel „Datenschutzoptionen für Werbung“, der das Formular wieder öffnet.</p>
+      <p>Auf dem iPhone fragt iOS danach, ob Peelhaus deine Aktivitäten über Apps anderer Unternehmen hinweg verfolgen darf (App Tracking Transparency). Lehnst du ab, bekommt Google keine IDFA, die Werbung ist nicht personalisiert, und das Spiel läuft genauso. Ändern kannst du das unter Einstellungen → Datenschutz &amp; Sicherheit → Tracking. Unter Android setzt du die Werbe-ID in den Systemeinstellungen zurück oder löschst sie.</p>
+      <p>Rechtsgrundlage: deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO); für nicht personalisierte Werbung und Betrugsabwehr das berechtigte Interesse (Art. 6 Abs. 1 lit. f DSGVO).</p>
+    </article>
+
+    <article class="note premium">
+      <h2>Premium, vom Hausmeister</h2>
+      <p>Es gibt einen einzigen In-App-Kauf, „Premium“ (peelhaus_premium_lifetime), einmal bezahlt, kein Abo. Er entfernt das Banner und die Vollbildwerbung, und Tipps, „Einen für mich kleben“ und das Retten der Serie gibt es sofort, ohne Video.</p>
+      <p>Die Zahlung wickelt komplett Apple (App Store) oder Google (Google Play) nach eigenen Datenschutzregeln ab. Deine Karte oder dein Store-Konto sehen wir nie. Die App erfährt nur, ob Premium gekauft ist, und speichert das als Markierung auf dem Handy. „Kauf wiederherstellen“ fragt einfach erneut beim Store nach.</p>
+      <p class="sig">der Hausmeister</p>
+    </article>
+
+    <article class="note">
+      <h2>Der Zettel am Abend</h2>
+      <p>Peelhaus kann dir um 19:00 Uhr Ortszeit einen kurzen Zettel hinterlassen, an Tagen, an denen du noch nicht gespielt hast, höchstens einen am Tag. Dein Handy plant ihn höchstens eine Woche im Voraus, nach einer Woche ohne Spiel hört es also von selbst auf. Es gibt keinen Push-Dienst und kein Benachrichtigungs-Token, und nichts wird irgendwohin gesendet.</p>
+      <p>Auf dem iPhone kommt der Zettel zuerst still, nur in die Mitteilungszentrale, bis du vollen Mitteilungen zustimmst. Unter Android 13 und neuer fragt das System vorher. Abschalten kannst du ihn am Schwarzen Brett („Ein Zettel am Abend um 19:00“) oder in den Handy-Einstellungen.</p>
+    </article>
+
+    <article class="note small">
+      <h2>Kinder</h2>
+      <p>Peelhaus ist ein ruhiges Spiel für ein allgemeines Publikum und richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine Daten von ihnen. Wenn du glaubst, dass uns ein Kind Daten übermittelt hat, schreib uns bitte.</p>
+    </article>
+
+    <article class="note">
+      <h2>Deine Rechte</h2>
+      <p>Nach der DSGVO hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Eine Einwilligung kannst du jederzeit widerrufen, ohne dass das Bisherige dadurch unrechtmäßig wird.</p>
+      <p>Wir speichern auf keinem Server etwas über dich, deshalb gibt es meist nichts, was wir herausgeben oder löschen könnten. Die Spieldaten entfernst du selbst, indem du das Spiel deinstallierst. Für Werbedaten nutzt du die Datenschutzoptionen für Werbung, setzt die Werbe-ID zurück oder verwendest die Tools von Google.</p>
+      <p>Außerdem kannst du dich bei der polnischen Aufsichtsbehörde beschweren, dem Präsidenten des Amtes für den Schutz personenbezogener Daten (PUODO, <a href="https://uodo.gov.pl">uodo.gov.pl</a>), oder bei der Behörde an deinem Wohnort.</p>
+    </article>
+
+    <article class="note small">
+      <h2>Wenn sich dieser Aushang ändert</h2>
+      <p>Eine neue Fassung ersetzt diese hier auf der Seite, mit neuem Datum. Auf größere Änderungen weisen wir zusätzlich in der App oder in den Update-Hinweisen hin.</p>
+      <p>Fragen zum Datenschutz: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>, JaworIT Daniel Jaworski.</p>
+    </article>
   </div>
-
-  <h2>Verantwortlich</h2>
-  <p>Peelhaus wird von JaworIT Daniel Jaworski erstellt (Verantwortlicher). Kontakt: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
-
-  <h2>Daten auf deinem Gerät</h2>
-  <p>Die App speichert lokal auf deinem Gerät: Fortschritt (fertige Szenen und Modi, Fensterlichter, Sterne), gesammelte Andenken, Tagesszene und Serienkalender, Einstellungen (Sprache, Ton, Vibration), den Erinnerungsstatus, Werbezähler (für die Limits), einen Startzähler (damit wir in deiner ersten Sitzung keine anderen Spiele empfehlen) und ob du Premium gekauft hast. Diese Daten werden weder an uns noch an andere gesendet. Du löschst sie, indem du die App-Daten löschst oder die App deinstallierst.</p>
-  <p>Du legst kein Konto an und gibst weder Namen noch E-Mail-Adresse an. Die App nutzt keine Analyse- oder Absturzberichts-Tools.</p>
-
-  <h2>Werbung (Google AdMob)</h2>
-  <p>Die kostenlose Version zeigt ein Banner auf dem Hausbildschirm und dem Bildschirm der Tagesszene (ab der 4. Szene, nie beim Kleben), selten eine Vollbildwerbung zwischen Szenen (nie in der ersten Sitzung, höchstens einmal pro 4 Szenen und 5 Minuten) und Werbung mit Belohnung, die du selbst startest. Die Werbung liefert Google über das Google Mobile Ads SDK. Beim Laden einer Anzeige kann das SDK folgende Daten erfassen und an Google senden:</p>
-  <ul>
-    <li>Gerätekennungen, z. B. die Werbe-ID (IDFA auf iOS nur mit deiner Erlaubnis; Android-Werbe-ID) und die App-Set-ID,</li>
-    <li>IP-Adresse und daraus abgeleiteter ungefährer Standort,</li>
-    <li>Informationen zu Interaktionen mit Anzeigen (z. B. Aufrufe, Tippen, App-Starts),</li>
-    <li>Diagnose- und Leistungsdaten (z. B. Startzeit, Abstürze des SDK).</li>
-  </ul>
-  <p>Google nutzt diese Daten, um Anzeigen auszuliefern und zu messen, für Analysen und zur Betrugsvermeidung. Die Übertragung ist verschlüsselt. Details: <a href="https://policies.google.com/technologies/partner-sites">Wie Google Daten von Websites und Apps von Partnern verwendet</a> und die <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>.</p>
-
-  <h2>Einwilligung zu Werbung (DSGVO)</h2>
-  <p>Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz zeigt die App vor der ersten Anzeige das Einwilligungsformular von Google (UMP). Du kannst personalisierte Werbung erlauben, ablehnen oder Einstellungen im Detail wählen. Ohne Einwilligung wird keine personalisierte Werbung gezeigt. Deine Wahl änderst du jederzeit unter Einstellungen → „Werbe-Datenschutz“. Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) bzw. für nicht personalisierte Werbung und Betrugsvermeidung das berechtigte Interesse.</p>
-
-  <h2>Tracking auf iOS (ATT)</h2>
-  <p>Auf iPhone und iPad fragt das System, ob die App deine Aktivitäten erfassen darf. Nur wenn du zustimmst, erhält Google die Werbe-ID IDFA. Das Spiel funktioniert ohne diese Erlaubnis genauso. Ändern kannst du das in den iOS-Einstellungen → Datenschutz &amp; Sicherheit → Tracking. Auf Android setzt du die Werbe-ID in den Systemeinstellungen zurück oder löschst sie.</p>
-
-  <h2>Benachrichtigungen</h2>
-  <p>Wenn du zustimmst, schickt das Spiel höchstens eine lokale Benachrichtigung am Tag, um 19:00 Uhr, zur Tagesszene (entfällt, wenn du an dem Tag schon gespielt hast). Wir fragen erst, wenn du 3 Fenster erleuchtet oder 3 Tage Serie hast. Dein Telefon plant sie selbst. Wir nutzen keinen Push-Dienst und keinen Server und erzeugen kein Benachrichtigungs-Token. Abschalten kannst du sie im Spiel oder in den Systemeinstellungen.</p>
-
-  <h2>Links zu unseren anderen Spielen</h2>
-  <p>In den Einstellungen und höchstens einmal am Tag auf einem Ergebnisbildschirm zeigt die App andere Spiele von JaworIT, gekennzeichnet mit „Von JaworIT“. Das ist keine Werbung Dritter: Die Liste ist in die App eingebaut, dafür wird nichts geladen, und wir erfassen nicht, ob du sie siehst oder antippst. Ein Tippen öffnet die Seite des Spiels im App Store oder bei Google Play; dort gilt die Datenschutzerklärung von Apple bzw. Google. Premium-Spieler sehen die Karte auf Ergebnisbildschirmen nicht.</p>
-
-  <h2>Teilen</h2>
-  <p>Die App hat keine Teilen-Funktion, verschickt keine Bilder und fragt nicht nach Zugriff auf deine Fotos.</p>
-
-  <h2>In-App-Käufe</h2>
-  <p>Den einmaligen Kauf „Premium“ wickelt Apple (App Store) oder Google (Google Play) ab. Wir sehen deine Zahlungsdaten nie. Die App erhält nur die Information, ob der Kauf aktiv ist, und speichert sie auf dem Gerät. Für die Zahlung gilt die Datenschutzerklärung von Apple bzw. Google.</p>
-
-  <h2>Kinder</h2>
-  <p>Die App richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine Daten von ihnen. Wenn du glaubst, dass ein Kind uns Daten übermittelt hat, melde dich bitte.</p>
-
-  <h2>Deine Rechte</h2>
-  <p>Wir speichern deine Daten auf keinem Server, daher können wir nichts herausgeben oder löschen. Die Daten in der App löschst du selbst. Zu Werbedaten kannst du deine Einwilligung in der App widerrufen, die Werbe-ID zurücksetzen oder die Tools von Google nutzen. Du hast außerdem das Recht, dich bei einer Datenschutzaufsichtsbehörde zu beschweren.</p>
-
-  <h2>Änderungen</h2>
-  <p>Wenn wir diese Erklärung ändern, veröffentlichen wir die neue Fassung auf dieser Seite und aktualisieren das Gültigkeitsdatum. Auf wesentliche Änderungen weisen wir in der App oder in den Update-Hinweisen hin.</p>
-
-  <h2>Kontakt</h2>
-  <p>Fragen zum Datenschutz: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
 </section>
 
-<section id="es" lang="es">
-  <h1>Política de privacidad</h1>
-  <p class="meta">Peelhaus (iOS y Android) · en vigor desde el 4 de noviembre de 2026</p>
-  <div class="box">
-    <p>En resumen: el juego funciona sin cuenta y sin internet. Tu progreso, ajustes y estadísticas se quedan en tu dispositivo. No tenemos servidor propio. Los datos necesarios para los anuncios los trata Google (AdMob), y las compras las gestionan Apple y Google.</p>
+<!-- ============================== ESPAÑOL ============================== -->
+<section class="lang" id="es" lang="es">
+  <div class="notices">
+    <article class="note head">
+      <p class="kicker">Kazimierz n.º 7 · aviso a los vecinos</p>
+      <h1>Privacidad en Peelhaus</h1>
+      <p class="meta">Peelhaus para iOS y Android · en vigor desde el 6 de noviembre de 2026</p>
+      <p class="hand">Tu edificio vive en tu móvil, no en nuestra casa.</p>
+      <p>El juego lo gestiona JaworIT Daniel Jaworski, responsable del tratamiento. Si tienes dudas, escribe a <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
+    </article>
+
+    <article class="note ruled">
+      <h2>Lo que se queda en tu piso</h2>
+      <p>Todo lo que el juego recuerda se guarda en su propio almacenamiento, en tu móvil. No tenemos servidor, así que nada de esto nos llega. La lista es corta:</p>
+      <ul>
+        <li>el progreso: qué ventanas están encendidas, las estrellas de cada modo, los recuerdos reunidos, la habitación que tienes a medias, las pistas que te quedan y qué edificio ves en pantalla;</li>
+        <li>tu racha del remix del día (la actual, la mejor y cuándo la recuperaste por última vez);</li>
+        <li>los ajustes: idioma, sonido, vibración y si la nota de la tarde está activada;</li>
+        <li>apuntes del recordatorio: cuántas veces te hemos preguntado por la nota, si dijiste que no y el último día que jugaste;</li>
+        <li>contadores de anuncios: cuándo salió el último anuncio a pantalla completa, cuántas habitaciones van desde entonces, cuántas veces has abierto el juego (para que la primera sesión no tenga anuncios a pantalla completa) y cuántas veces recibiste ayuda sin anuncio porque no cargaba ninguno;</li>
+        <li>si tienes Premium.</li>
+      </ul>
+      <p>Para borrarlo todo, desinstala Peelhaus (en Android también sirve borrar el almacenamiento de la app). No hay otra copia, así que después no se puede recuperar.</p>
+    </article>
+
+    <article class="note">
+      <h2>Lo que nunca te pedimos</h2>
+      <ul>
+        <li>una cuenta, tu nombre ni tu correo electrónico;</li>
+        <li>permiso para analítica o informes de fallos, porque el juego no incluye esas herramientas;</li>
+        <li>acceso a la cámara, el micrófono, las fotos, la ubicación o los contactos. En Android, los permisos de micrófono y archivos están bloqueados en la propia app;</li>
+        <li>nada que compartir: no hay función de compartir y el juego no envía imágenes.</li>
+      </ul>
+    </article>
+
+    <article class="note">
+      <h2>Anuncios en la escalera (Google AdMob)</h2>
+      <p>La versión gratuita se paga con anuncios que sirve Google mediante el Google Mobile Ads SDK. Hay tres tipos:</p>
+      <ul>
+        <li>un banner en la fachada del edificio y en la pantalla del remix del día, a partir de la cuarta habitación terminada, nunca mientras pegas;</li>
+        <li>de vez en cuando, un anuncio a pantalla completa entre habitaciones: nunca en tu primera sesión, y como mínimo cada 4 habitaciones y 5 minutos;</li>
+        <li>vídeos con recompensa que pones tú cuando quieres una pista, «Coloca una por mí» o recuperar la racha.</li>
+      </ul>
+      <p>Al pedir un anuncio, el SDK puede enviar a Google:</p>
+      <ul>
+        <li>identificadores del dispositivo: el identificador de publicidad (IDFA en iPhone, solo si permites el rastreo; el ID de publicidad de Android) y el ID del conjunto de apps;</li>
+        <li>tu dirección IP y la ubicación aproximada que se deduce de ella;</li>
+        <li>cómo interactúas con los anuncios, por ejemplo visualizaciones, toques y aperturas de la app;</li>
+        <li>datos de diagnóstico y rendimiento, por ejemplo tiempos de carga o fallos del propio SDK.</li>
+      </ul>
+      <p>Google los usa para mostrar y medir anuncios, para estadísticas y para detectar fraudes, y viajan cifrados. El juego solo pide anuncios aptos para todas las edades. Para saber más: <a href="https://policies.google.com/technologies/partner-sites">Cómo utiliza Google la información de sitios web o aplicaciones que utilizan sus servicios</a> y la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>.</p>
+    </article>
+
+    <article class="note">
+      <h2>Primero preguntamos</h2>
+      <p>Al abrir el juego por primera vez no arranca nada relacionado con anuncios. Solo después de la cuarta habitación terminada (o antes, si pones tú un vídeo con recompensa) Peelhaus consulta a la User Messaging Platform (UMP) de Google si hay que mostrar un formulario de consentimiento. En el Espacio Económico Europeo, el Reino Unido y Suiza, sí: puedes aceptar anuncios personalizados, rechazarlos o elegir finalidad por finalidad. Sin consentimiento, Google solo muestra anuncios no personalizados.</p>
+      <p>¿Has cambiado de idea? Cuando la UMP lo exige, en el tablón de anuncios (los ajustes del juego) hay una nota «Opciones de privacidad de anuncios» que vuelve a abrir el formulario.</p>
+      <p>En iPhone, después de ese paso, iOS te pregunta si Peelhaus puede rastrear tu actividad en apps de otras empresas (App Tracking Transparency). Si dices que no, Google no recibe el IDFA, los anuncios no se personalizan y el juego funciona exactamente igual. Puedes cambiarlo en Ajustes → Privacidad y seguridad → Rastreo. En Android puedes restablecer o eliminar el ID de publicidad en los ajustes del sistema.</p>
+      <p>Base jurídica: tu consentimiento (art. 6.1.a del RGPD); para los anuncios no personalizados y la prevención del fraude, el interés legítimo (art. 6.1.f del RGPD).</p>
+    </article>
+
+    <article class="note premium">
+      <h2>Premium, del portero</h2>
+      <p>Hay una única compra en la app, «Premium» (peelhaus_premium_lifetime), que se paga una vez, sin suscripción. Quita el banner y los anuncios a pantalla completa, y las pistas, «Coloca una por mí» y la recuperación de la racha llegan al momento, sin vídeo.</p>
+      <p>Todo el pago lo gestiona Apple (App Store) o Google (Google Play) con sus propias normas de privacidad. Nunca vemos tu tarjeta ni tu cuenta de la tienda. La app solo sabe si Premium está comprado y lo guarda como una marca en tu móvil. «Restaurar compra» simplemente vuelve a preguntar a la tienda.</p>
+      <p class="sig">el portero</p>
+    </article>
+
+    <article class="note">
+      <h2>La nota de la tarde</h2>
+      <p>Peelhaus puede dejarte una nota corta a las 19:00, hora local, los días que aún no has jugado, nunca más de una al día. Tu móvil la programa como mucho con una semana de antelación, así que tras una semana sin jugar las notas dejan de llegar solas. No hay servicio push ni token de notificaciones, y no se envía nada a ningún sitio.</p>
+      <p>En iPhone la nota empieza llegando en silencio, solo al Centro de notificaciones, hasta que aceptas las notificaciones completas. En Android 13 y posteriores el sistema te pregunta antes. Puedes quitarla en el tablón de anuncios («Una nota por la tarde a las 19:00») o en los ajustes del móvil.</p>
+    </article>
+
+    <article class="note small">
+      <h2>Menores</h2>
+      <p>Peelhaus es un juego tranquilo para todos los públicos y no está dirigido a menores de 13 años. No recopilamos sus datos de forma consciente. Si crees que un menor nos ha facilitado datos personales, escríbenos.</p>
+    </article>
+
+    <article class="note">
+      <h2>Tus derechos</h2>
+      <p>El RGPD te reconoce el derecho de acceso, rectificación, supresión, limitación del tratamiento, portabilidad y oposición. Puedes retirar tu consentimiento cuando quieras, sin que eso afecte a lo anterior.</p>
+      <p>No guardamos nada sobre ti en ningún servidor, así que normalmente no tenemos nada que entregar ni borrar. Los datos del juego los eliminas tú al desinstalarlo. Para los datos publicitarios, usa las opciones de privacidad de anuncios, restablece tu ID de publicidad o recurre a las herramientas de Google.</p>
+      <p>También puedes reclamar ante la autoridad de control polaca, el Presidente de la Oficina de Protección de Datos Personales (PUODO, <a href="https://uodo.gov.pl">uodo.gov.pl</a>), o ante la autoridad de tu país.</p>
+    </article>
+
+    <article class="note small">
+      <h2>Si este aviso cambia</h2>
+      <p>Una versión nueva sustituirá a esta en esta página, con fecha nueva. Los cambios importantes también los mencionaremos en la app o en las notas de la actualización.</p>
+      <p>Preguntas sobre privacidad: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>, JaworIT Daniel Jaworski.</p>
+    </article>
   </div>
-
-  <h2>Responsable</h2>
-  <p>Peelhaus lo crea JaworIT Daniel Jaworski (responsable del tratamiento). Contacto: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
-
-  <h2>Datos en tu dispositivo</h2>
-  <p>La app guarda localmente en tu dispositivo: el progreso (escenas y modos terminados, luces de las ventanas, estrellas), los recuerdos que has reunido, la escena diaria y el calendario de racha, los ajustes (idioma, sonido, vibración), el estado del recordatorio, contadores de anuncios (para respetar los límites), un contador de inicios (para no sugerir nuestros otros juegos en tu primera sesión) y si has comprado Premium. Estos datos no se envían ni a nosotros ni a nadie. Los borras eliminando los datos de la app o desinstalándola.</p>
-  <p>No creas ninguna cuenta ni nos das tu nombre o correo electrónico. La app no usa herramientas de analítica ni de informes de fallos.</p>
-
-  <h2>Anuncios (Google AdMob)</h2>
-  <p>La versión gratuita muestra un banner en la pantalla del edificio y en la de la escena diaria (desde la 4.ª escena, nunca mientras pegas), algún anuncio a pantalla completa entre escenas (nunca en tu primera sesión, como mucho uno cada 4 escenas y 5 minutos) y anuncios con recompensa que inicias tú. Los anuncios los proporciona Google mediante el Google Mobile Ads SDK. Al cargar un anuncio, el SDK puede recopilar y enviar a Google:</p>
-  <ul>
-    <li>identificadores del dispositivo, como el identificador de publicidad (IDFA en iOS, solo con tu permiso; ID de publicidad de Android) y el ID del conjunto de apps,</li>
-    <li>la dirección IP y la ubicación aproximada derivada de ella,</li>
-    <li>información sobre interacciones con anuncios (por ejemplo, visualizaciones, toques, aperturas de la app),</li>
-    <li>datos de diagnóstico y rendimiento (por ejemplo, tiempo de inicio, fallos del SDK).</li>
-  </ul>
-  <p>Google usa estos datos para mostrar y medir anuncios, para analítica y para prevenir el fraude. Los datos se cifran durante la transmisión. Más información: <a href="https://policies.google.com/technologies/partner-sites">Cómo utiliza Google la información de sitios web o aplicaciones que utilizan sus servicios</a> y la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>.</p>
-
-  <h2>Consentimiento para anuncios (RGPD)</h2>
-  <p>En el Espacio Económico Europeo, el Reino Unido y Suiza, la app muestra el formulario de consentimiento de Google (UMP) antes del primer anuncio. Puedes aceptar anuncios personalizados, rechazarlos o elegir opciones detalladas. Sin consentimiento, los anuncios no se personalizan. Puedes cambiar tu elección en cualquier momento en Ajustes → «Privacidad de anuncios». La base jurídica es tu consentimiento (art. 6.1.a del RGPD) o, para anuncios no personalizados y prevención del fraude, el interés legítimo.</p>
-
-  <h2>Seguimiento en iOS (ATT)</h2>
-  <p>En iPhone y iPad, el sistema te pregunta si la app puede rastrear tu actividad. Google solo recibe el identificador de publicidad IDFA si lo permites. El juego funciona igual sin este permiso. Puedes cambiarlo en Ajustes de iOS → Privacidad y seguridad → Rastreo. En Android puedes restablecer o eliminar el ID de publicidad en los ajustes del sistema.</p>
-
-  <h2>Notificaciones</h2>
-  <p>Si lo permites, el juego envía como mucho una notificación local al día, a las 19:00, sobre la escena diaria (no se envía si ya has jugado ese día). Solo lo preguntamos cuando has encendido 3 ventanas o llevas 3 días de racha. La programa tu teléfono. No usamos ningún servicio push ni servidor y no creamos ningún token de notificaciones. Puedes desactivarla en el juego o en los ajustes del sistema.</p>
-
-  <h2>Enlaces a nuestros otros juegos</h2>
-  <p>En Ajustes y, como mucho una vez al día, en una pantalla de resultado, la app muestra otros juegos de JaworIT, marcados «De JaworIT». No es publicidad de terceros: la lista viene dentro de la app, no se descarga nada para ella y no registramos si la ves o la tocas. Al tocarla se abre la página del juego en App Store o Google Play, donde se aplica la política de privacidad de Apple o de Google. Los jugadores Premium no ven la tarjeta en las pantallas de resultado.</p>
-
-  <h2>Compartir</h2>
-  <p>La app no tiene función de compartir, no envía imágenes y no pide acceso a tus fotos.</p>
-
-  <h2>Compras dentro de la app</h2>
-  <p>La compra única «Premium» la procesa Apple (App Store) o Google (Google Play). Nunca vemos tus datos de pago. La app solo recibe si la compra está activa y lo guarda en tu dispositivo. Al pago se aplica la política de privacidad de Apple o de Google.</p>
-
-  <h2>Menores</h2>
-  <p>La app no está dirigida a menores de 13 años y no recopila sus datos de forma consciente. Si crees que un menor nos ha facilitado datos, escríbenos.</p>
-
-  <h2>Tus derechos</h2>
-  <p>No guardamos tus datos en ningún servidor, así que no tenemos nada que entregar ni borrar. Los datos de la app los borras tú. Sobre los datos publicitarios, puedes retirar el consentimiento en la app, restablecer tu ID de publicidad o usar las herramientas de Google. También tienes derecho a presentar una reclamación ante una autoridad de protección de datos.</p>
-
-  <h2>Cambios</h2>
-  <p>Si cambiamos esta política, publicaremos la nueva versión en esta página y actualizaremos la fecha de entrada en vigor. Avisaremos de los cambios importantes en la app o en las notas de la actualización.</p>
-
-  <h2>Contacto</h2>
-  <p>Preguntas sobre privacidad: <a href="mailto:kontakt@jaworit.pl">kontakt@jaworit.pl</a>.</p>
 </section>
 
 </main>
-<footer>Peelhaus · com.jaworit.peelhaus</footer>
+</div></div></div>
+
+<footer>Peelhaus · com.jaworit.peelhaus · Kazimierz No. 7, Kraków</footer>
 </body>
 </html>
